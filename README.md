@@ -5,24 +5,23 @@ Generate a profiling report for a CSV file.
 - Streamlit GUI: upload CSV + export reports
 
 # Setup
-uv venv -p 3.11
-
-uv pip install -r requirements.txt
+- uv venv -p 3.11
+- uv pip install -r requirements.txt
 
 # Run CLI
 ## If you have a src/ folder, run this:
-#### for Mac/Linux:   
+- for Mac/Linux:   
 export PYTHONPATH=src
-#### for Windows:     
+- for Windows:     
 $env:PYTHONPATH="src"
 #### this run this:
 uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
 
  # Run GUI
  ## If you have a src/ folder, run this:
-#### for Mac/Linux:   
+- for Mac/Linux:   
 export PYTHONPATH=src
-#### for Windows:     
+- for Windows:     
 $env:PYTHONPATH="src"
 #### this run this:
 uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
