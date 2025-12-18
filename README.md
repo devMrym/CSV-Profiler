@@ -24,7 +24,7 @@ export PYTHONPATH=src
 - for Windows:     
 $env:PYTHONPATH="src"
 #### then run this:
-uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
+uv run streamlit run app.py
 
 
 # Smoke Test
