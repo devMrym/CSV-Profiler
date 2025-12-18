@@ -1,4 +1,40 @@
-### CSV Profile Report Project
-#### This Project is by Maryam Alonazi
-#### Made for SDAIA AI Pro BootCamp
-#### Week 1 Final Project
+# CSV Profiler
+Generate a profiling report for a CSV file.
+# Features
+- CLI: JSON + Markdown report
+- Streamlit GUI: upload CSV + export reports
+
+# Setup
+uv venv -p 3.11
+uv pip install -r requirements.txt
+
+# Run CLI
+# If you have a src/ folder:
+# Mac/Linux: export PYTHONPATH=src
+# Windows: $env:PYTHONPATH="src"
+uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
+
+ # Run GUI
+ # If you have a src/ folder:
+ # Mac/Linux: export PYTHONPATH=src
+ # Windows: $env:PYTHONPATH="src"
+ uv run streamlit run app.py
+
+
+
+ # Smoke Test
+
+1) Run the CLI:
+
+# If you have a `src/` folder: set `PYTHONPATH=src` first
+uv run python -m csv_profiler.cli profile data/sample.csv -out-dir outputs
+
+2) Check the output files exist:
+
+ # Mac/Linux
+ ls outputs
+
+ # Windows PowerShell
+ dir outputs
+
+ You should see `report.json` and `report.md`.
