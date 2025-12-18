@@ -10,25 +10,26 @@ uv pip install -r requirements.txt
 
 # Run CLI
 ## If you have a src/ folder, run this:
-### Mac/Linux:   export PYTHONPATH=src
-### Windows:     $env:PYTHONPATH="src"
-## this run this:
+#### for Mac/Linux:   
+export PYTHONPATH=src
+#### for Windows:     
+$env:PYTHONPATH="src"
+#### this run this:
 uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
 
  # Run GUI
  ## If you have a src/ folder, run this:
- ### Mac/Linux: export PYTHONPATH=src
- ### Windows: $env:PYTHONPATH="src"
-## this run this:
+#### for Mac/Linux:   
+export PYTHONPATH=src
+#### for Windows:     
+$env:PYTHONPATH="src"
+#### this run this:
 uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
-
-
 
 
 # Smoke Test
 
 1) Run the CLI:
-
 # If you have a `src/` folder: set `PYTHONPATH=src` first
 uv run python -m csv_profiler.cli profile data/sample.csv -out-dir outputs
 
