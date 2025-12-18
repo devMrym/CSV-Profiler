@@ -14,7 +14,7 @@ Generate a profiling report for a CSV file.
 export PYTHONPATH=src
 - for Windows:     
 $env:PYTHONPATH="src"
-#### this run this:
+#### then run this:
 uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
 
  # Run GUI
@@ -23,7 +23,7 @@ uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
 export PYTHONPATH=src
 - for Windows:     
 $env:PYTHONPATH="src"
-#### this run this:
+#### then run this:
 uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
 
 
