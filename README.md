@@ -9,20 +9,23 @@ uv venv -p 3.11
 uv pip install -r requirements.txt
 
 # Run CLI
-# If you have a src/ folder:
-# Mac/Linux: export PYTHONPATH=src
-# Windows: $env:PYTHONPATH="src"
+## If you have a src/ folder, run this:
+### Mac/Linux:   export PYTHONPATH=src
+### Windows:     $env:PYTHONPATH="src"
+## this run this:
 uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
 
  # Run GUI
- # If you have a src/ folder:
- # Mac/Linux: export PYTHONPATH=src
- # Windows: $env:PYTHONPATH="src"
- uv run streamlit run app.py
+ ## If you have a src/ folder, run this:
+ ### Mac/Linux: export PYTHONPATH=src
+ ### Windows: $env:PYTHONPATH="src"
+## this run this:
+uv run python -m csv_profiler.cli profile data/sample.csv --out-dir outputs
 
 
 
- # Smoke Test
+
+# Smoke Test
 
 1) Run the CLI:
 
